@@ -1,0 +1,20 @@
+package com.example.demo4.SecurityApp.dto;
+
+import com.example.demo4.SecurityApp.entities.enums.Role;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Set;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class LoginResponseDto {
+
+    private Long id;
+    private String accessToken;
+    private String refreshToken;
+    private String name;
+    private Set<Role> roles;
+}
